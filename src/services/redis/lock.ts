@@ -48,6 +48,7 @@ export const withLock = async (key: string, cb: (redisClient: Client, signal: an
 };
 
 type Client = typeof client;
+
 const buildClientProxy = (timeoutMs: number) => {
 	const startTime = Date.now();
 
